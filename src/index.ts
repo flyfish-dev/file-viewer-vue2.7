@@ -35,7 +35,11 @@ export type {
   ViewerToolbarOptions,
   ViewerToolbarPosition,
   ViewerTypstOptions,
-  ViewerWatermarkOptions
+  ViewerWatermarkOptions,
+  ViewerLifecycleContext,
+  ViewerOperationContext,
+  ViewerState,
+  ViewerStateListener
 } from './controller.js'
 
 export interface FileViewerVue27PluginOptions {
@@ -166,6 +170,63 @@ export const FileViewer = Vue.extend({
     },
     reload() {
       return getVmHandle(toVm(this)).reload()
+    },
+    downloadOriginalFile() {
+      return getVmHandle(toVm(this)).downloadOriginalFile()
+    },
+    printRenderedHtml() {
+      return getVmHandle(toVm(this)).printRenderedHtml()
+    },
+    exportRenderedHtml() {
+      return getVmHandle(toVm(this)).exportRenderedHtml()
+    },
+    zoomIn() {
+      return getVmHandle(toVm(this)).zoomIn()
+    },
+    zoomOut() {
+      return getVmHandle(toVm(this)).zoomOut()
+    },
+    resetZoom() {
+      return getVmHandle(toVm(this)).resetZoom()
+    },
+    searchDocument(query: string) {
+      return getVmHandle(toVm(this)).searchDocument(query)
+    },
+    clearDocumentSearch() {
+      return getVmHandle(toVm(this)).clearDocumentSearch()
+    },
+    nextSearchResult() {
+      return getVmHandle(toVm(this)).nextSearchResult()
+    },
+    previousSearchResult() {
+      return getVmHandle(toVm(this)).previousSearchResult()
+    },
+    collectDocumentAnchors() {
+      return getVmHandle(toVm(this)).collectDocumentAnchors()
+    },
+    scrollToAnchor(anchor: Parameters<ViewerControllerHandle['scrollToAnchor']>[0]) {
+      return getVmHandle(toVm(this)).scrollToAnchor(anchor)
+    },
+    scrollToLine(line: number) {
+      return getVmHandle(toVm(this)).scrollToLine(line)
+    },
+    getDocumentTextChunks() {
+      return getVmHandle(toVm(this)).getDocumentTextChunks()
+    },
+    getOperationAvailability() {
+      return getVmHandle(toVm(this)).getOperationAvailability()
+    },
+    getZoomState() {
+      return getVmHandle(toVm(this)).getZoomState()
+    },
+    getSearchState() {
+      return getVmHandle(toVm(this)).getSearchState()
+    },
+    getState() {
+      return getVmHandle(toVm(this)).getState()
+    },
+    subscribe(listener: Parameters<ViewerControllerHandle['subscribe']>[0]) {
+      return getVmHandle(toVm(this)).subscribe(listener)
     },
     destroy() {
       getVmHandle(toVm(this)).destroy()

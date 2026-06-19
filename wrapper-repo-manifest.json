@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-19T10:08:26.264Z",
+  "generatedAt": "2026-06-19T12:31:17.805Z",
   "sourceBranch": "v3",
-  "sourceCommit": "aa31fe9",
+  "sourceCommit": "3e293b0",
   "organization": "flyfish-dev",
   "framework": "Vue 2.7",
   "packageName": "@file-viewer/vue2.7",
@@ -17,7 +17,7 @@
   "historicalPackages": [
     "@flyfish-group/file-viewer"
   ],
-  "sourcePackageDir": "packages/wrappers/vue2.7",
+  "sourcePackageDir": "packages/components/vue2.7",
   "corePackage": "@file-viewer/core",
-  "coreSourceVisibility": "private-source"
+  "coreSourceVisibility": "public-source"
 }

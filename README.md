@@ -1,6 +1,6 @@
 # @file-viewer/vue2.7
 
-标准 Vue 2.7 native wrapper 包，提供 `Vue.use()` 插件安装和局部组件两种方式。组件内部通过本包本地 controller 调用 `@file-viewer/core` 与 core browser engine 挂载完整预览器，不依赖其他 wrapper。
+标准 Vue 2.7 native 组件包，提供 `Vue.use()` 插件安装和局部组件两种方式。组件内部通过本包本地 controller 调用 `@file-viewer/core` 与 core browser engine 挂载完整预览器，不依赖其他组件包。
 
 ```bash
 npm install vue@2.7 @file-viewer/vue2.7
@@ -61,7 +61,7 @@ English README: [README.en.md](./README.en.md)。
 <!-- FILE_VIEWER_GENERATED:START -->
 ## 生态包矩阵
 
-所有标准 wrapper 都只共享 `@file-viewer/core` 这个总底座，不依赖其他 wrapper。core 内部负责格式矩阵、资源解析、browser/renderers、事件、操作 API、搜索、缩放、打印和导出；各框架 wrapper 自己维护本地 controller、组件生命周期、类型出口和生态交互。
+所有标准组件包都只共享 `@file-viewer/core` 这个总底座，不依赖其他框架组件实现。core 内部负责格式矩阵、资源解析、browser/renderers、事件、操作 API、搜索、缩放、打印和导出；各框架组件包自己维护本地 controller、组件生命周期、类型出口和生态交互。
 
 | 框架 | 标准 npm 包 | 入口格式 | GitHub | Gitee | 兼容历史包 |
 | --- | --- | --- | --- | --- | --- |
@@ -76,7 +76,7 @@ English README: [README.en.md](./README.en.md)。
 
 ## 格式支持矩阵
 
-共享 core 当前覆盖 23 条预览链路、194 个扩展名。所有格式都按需异步加载，wrapper 层只做生态适配，不互相嵌套。
+共享 core 当前覆盖 23 条预览链路、194 个扩展名。所有格式都按需异步加载，组件层只做生态适配，不互相嵌套。
 
 | 预览链路 | 分类 | 扩展名 | 能力 | 加载 |
 | --- | --- | --- | --- | --- |
@@ -106,5 +106,5 @@ English README: [README.en.md](./README.en.md)。
 
 完整参数、生命周期 hooks、beforeOperation、主题、水印、搜索、缩放、打印和导出说明见官方文档: https://doc.flyfish.dev/
 
-在线 Demo: https://viewer.flyfish.dev/ 。License: Apache-2.0。二开或商用请保留 Flyfish Viewer 来源说明；如果修复了通用兼容问题，也欢迎贡献回对应 wrapper 仓库。
+在线 Demo: https://viewer.flyfish.dev/ 。License: Apache-2.0。二开或商用请保留 Flyfish Viewer 来源说明；如果修复了通用兼容问题，也欢迎贡献回对应组件仓库。
 <!-- FILE_VIEWER_GENERATED:END -->
