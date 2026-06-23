@@ -1,6 +1,6 @@
 {
   "name": "@file-viewer/vue2.7",
-  "version": "2.0.11",
+  "version": "2.1.1",
   "private": false,
   "type": "module",
   "description": "Standard Vue 2.7 component package for Flyfish File Viewer",
@@ -10,7 +10,10 @@
     "vue",
     "vue2",
     "vue2.7",
-    "office-preview"
+    "office-preview",
+    "document-viewer",
+    "file-preview",
+    "self-hosted"
   ],
   "publishConfig": {
     "access": "public",
@@ -27,6 +30,10 @@
   "homepage": "https://github.com/flyfish-dev/file-viewer-vue2.7",
   "bugs": {
     "url": "https://github.com/flyfish-dev/file-viewer-vue2.7/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://dev.flyfish.group/shop"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -52,7 +59,7 @@
     "vue": ">=2.7 <3"
   },
   "dependencies": {
-    "@file-viewer/core": "^2.0.11"
+    "@file-viewer/core": "^2.1.1"
   },
   "devDependencies": {
     "typescript": "^6.0.3",
