@@ -1,6 +1,6 @@
 {
   "name": "@file-viewer/vue2.7",
-  "version": "2.1.16",
+  "version": "2.1.18",
   "private": false,
   "type": "module",
   "description": "Standard Vue 2.7 component package for Flyfish File Viewer",
@@ -33,7 +33,7 @@
   },
   "funding": {
     "type": "individual",
-    "url": "https://dev.flyfish.group/shop"
+    "url": "https://dev.flyfish.group/donate?source=npm"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -59,7 +59,7 @@
     "vue": ">=2.7 <3"
   },
   "dependencies": {
-    "@file-viewer/core": "^2.1.16"
+    "@file-viewer/core": "^2.1.18"
   },
   "devDependencies": {
     "typescript": "^6.0.3",
